@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/picture_image"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/disc_disco"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/star"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            app:srcCompat="@drawable/star"/>
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/star"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Nombre de la canción"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Album"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/banda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Banda"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/banda"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Tiempo"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tiempo"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Genero"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/genero"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Play"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPlay"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Pause"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPause"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/picture_image"
+            android:text="Compartir"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
